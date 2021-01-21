@@ -16,6 +16,9 @@ int main() {
 	   int i;
 	   for(int i=1;i<s.length();i++)
 	   {
+		   
+		//for even 
+		   
 	   low=i-1;
 	   high=i;
           while(low>=0 && high<s.length() && s[low] == s[high])
@@ -28,6 +31,10 @@ int main() {
               low--;
               high++;
           }
+		   
+		   
+		   //for odd
+		   
 	   low=i-1;
 	   high=i+1;
           while(low>=0 && high<s.length() && s[low] == s[high])
